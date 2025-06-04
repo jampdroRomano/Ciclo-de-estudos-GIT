@@ -1,6 +1,6 @@
 Teste git
 
-
+VERSÃO 1{
 ==============================
 DOCUMENTAÇÃO BÁSICA DE GIT - LINHA DE COMANDO
 ==============================
@@ -83,3 +83,14 @@ git add .
 git commit -m "mensagem"
 git remote add origin <URL>
 git push --set-upstream origin master
+
+
+--------------------------------------------------------- 
+}
+
+VERSÃO 2{
+
+
+TESTE PRATICO DE VERSIONAMENTO 
+
+}
