@@ -1,0 +1,85 @@
+Teste git
+
+
+==============================
+DOCUMENTAÇÃO BÁSICA DE GIT - LINHA DE COMANDO
+==============================
+
+1. Inicializar um repositório Git
+---------------------------------
+Comando:
+    git init
+
+Descrição:
+    Cria um repositório Git vazio na pasta atual. Isso gera uma pasta oculta chamada ".git" onde o Git salva os dados de versionamento.
+
+2. Verificar o status do repositório
+------------------------------------
+Comando:
+    git status
+
+Descrição:
+    Mostra o estado atual dos arquivos no repositório — quais estão sendo rastreados, modificados ou ainda não adicionados.
+
+3. Adicionar arquivos ao staging
+--------------------------------
+Comandos:
+    git add "nome-do-arquivo.txt"
+    git add .
+
+Descrição:
+    Adiciona um ou todos os arquivos ao staging (área de preparação) para serem salvos no próximo commit.
+
+4. Configurar nome e e-mail (autor dos commits)
+-----------------------------------------------
+Comandos:
+    git config --global user.name "Seu Nome"
+    git config --global user.email "seu@email.com"
+
+Descrição:
+    Define o nome e o e-mail que serão usados como autor dos commits. A opção "--global" aplica essas configurações em todos os repositórios do computador.
+
+5. Criar um commit
+------------------
+Comando:
+    git commit -m "mensagem do commit"
+
+Descrição:
+    Salva no histórico os arquivos adicionados com uma mensagem explicando a mudança.
+
+6. Adicionar repositório remoto (GitHub, por exemplo)
+-----------------------------------------------------
+Comando:
+    git remote add origin https://github.com/usuario/repositorio.git
+
+Descrição:
+    Liga o repositório local com um repositório hospedado remotamente (como no GitHub). O nome "origin" é o apelido usado para o link remoto.
+
+7. Enviar os arquivos locais para o repositório remoto
+------------------------------------------------------
+Comando:
+    git push --set-upstream origin master
+
+Descrição:
+    Envia a branch "master" local para o GitHub. O parâmetro "--set-upstream" define o repositório remoto como padrão para push/pull no futuro.
+
+8. Erros comuns e dicas
+-----------------------
+Erro:
+    fatal: Authentication failed for ...
+
+Causa:
+    Usuário ou senha incorretos, ou autenticação via navegador necessária.
+
+Solução:
+    Ao usar HTTPS, o Git pode abrir o navegador para autenticação (com GitHub CLI ou token).
+
+-------------------------------
+FLUXO PADRÃO DO GIT
+-------------------------------
+git init
+git status
+git add .
+git commit -m "mensagem"
+git remote add origin <URL>
+git push --set-upstream origin master
